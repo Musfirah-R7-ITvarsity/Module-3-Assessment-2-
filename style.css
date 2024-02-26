@@ -1,0 +1,257 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin     : 0;
+    padding    : 0;
+    
+    height     : 100%;
+}
+
+.body-home{
+     background-image : url('images/IMG_4710.JPG');
+     background-size  : cover;
+     background-repeat: no-repeat;
+}
+
+h3{
+    font-size  : 55px;
+    font-family: Times New Roman, serif;
+    text-align : center;
+    color      : #0a4d84;
+}
+/*===== HOME PAGE MENU =====*/
+
+.home-menu-item {
+    text-decoration: none;
+    text-transform : uppercase;
+    
+    color      : #CC5500;
+    font-family: Café Brasil;
+    font-size  : 43px;
+    font-weight: bold;
+    text-align : center;
+    border     : 5px solid black;
+    
+    display      : block;
+    margin       : auto;
+    margin-top   : 20;
+    margin-bottom: 10px;
+    width        : 80%;
+}
+
+.home-menu h1{
+     font-size  : 55px;
+     font-family: Times New Roman, serif;
+     text-align : center;
+      color     : #0a4d84;
+}
+
+.home-menu-item:hover { 
+    color           : 0a4d84; 
+    background-color: #f2f2f2;  
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+    display    : block;
+    margin     : 0 auto;
+    padding-top: 23px;
+}
+
+/*========= HEADER =========*/
+
+.header {
+    background-color: #2f4763;
+   
+    overflow:auto;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    
+    font-size: 27px;
+     position: fixed;
+   
+    text-align: center;
+    
+}
+
+.header svg {
+    position: absolute;
+  top: 5%;
+    display: block;
+    color: black;
+    width:37px;
+    padding-top: 5px;
+    padding-left: 19px;
+    padding-bottom: 10px; 
+    
+}
+
+/*========= MEALS PAGE =========*/
+
+#meals {
+    padding-top: 50px;
+    background-image: url('images/IMG_4712.jpg');
+     background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100%;
+}
+
+/*===== MEALS PAGE MENU  =====*/
+.meals-list a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.meals-list-item {
+    border: 5px solid #1a1a1a;
+    margin: 20px;
+}
+.meals-list-item h1{
+    font-family: Road Race, serif;
+    font-size: 35px;
+    color: #CC5500;
+}
+
+.meals-list-item i{
+    font-family:  serif;
+    font-size: 17px;
+    color: white;
+}
+   
+.meals-list-item svg {
+    float:right;
+    padding-right: 47px;
+    color: #1a1a1a;
+    width: 45px;
+}
+
+/*===== MENU ITEMS DETAILS - nachos etc =====*/
+#food-details img {
+   width : 100%;
+   height: 79%;
+}
+
+#food{
+    background-image: url('images/IMG_4703.jpg');
+    background-size: cover;
+}
+#food-details h1 {
+    font-family: Corsica,cursive;
+    text-align : center;
+    font-size  : 52px;
+    border     : 5px solid #1a1a1a;
+    margin     : 10px;
+    padding    : 10px;
+}
+
+#food-details h2{
+    font-size  : 27px;
+    text-align : left;
+    margin     : 0;
+    margin-left: 29px;
+}
+
+#food-details p{
+    font-size   : 25px;
+    display     : inline-block;
+    padding-left: 29px;   
+}
+
+#food-details-info{
+    margin-left : 25px;
+    margin-right: 25px;
+}
+ 
+.food-details-extras label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+/*===== MENU ITEMS FORM - nachos etc =====*/
+
+.customer-input{
+    font-size   : 22px;
+    text-align  : left; 
+    padding-left: 30px;
+    float       : left;
+    margin-left : 4px;
+   
+}
+
+#type-requests{
+    font-size  : 22px;
+    text-align : left; 
+    float      : left;
+    margin-left: -7px;
+}
+textarea{
+    font-size: 22.5px;
+    width         : 54%;
+    height        : 30px;
+    padding-bottom: 4px;
+    padding-left  : 29px;
+     float        : left;
+    margin-left   : 16px;
+}
+
+/*===== MESSAGE-RECEIVED PAGE =====*/
+
+#info-box{
+   background-color:#DCAE96;;
+   width           : 98.5%;
+   display         : block;
+   margin          : auto;
+   margin-top      : 12px;
+   padding         : 10px;
+    border         : solid black;
+}
+
+#info-box img{
+   width : 100%; 
+   height: 40%;
+}
+#info-box h3{
+    font-family: Times New Roman, serif;
+    font-size  : 33px;
+}
+
+/*========= RESPONSIVE PAGES  LAYOUT =========*/
+
+@media screen  and (max-width: 768px) 
+   #meals{
+        width: 98%;
+        margin: auto;
+   }
+     #food{
+        width: 98%;
+        margin: auto;
+    
+    }
+
+@media screen  and (max-width: 400px) 
+   #meals{
+        width: 95%;
+        margin: auto;
+   }
+     #food{
+        width: 95%;
+        margin: auto;
+    
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .body-home{
+        background-image: url('images/IMG_4710.JPG');
+    } 
+    .body-meals{
+        background-image: url('images/IMG_4712.jpg');
+    } 
+}
